@@ -1,0 +1,83 @@
+
+
+
+
+
+
+/* Below: This CSS is from chatGPT as I just wanted to see how it looked slightly done up. */
+/* body {
+    margin: 0;
+    padding: 24px;
+    background: #15171c;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  #heroGallery {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(160px, 1fr)
+    );
+    gap: 16px;
+  }
+  
+  .hero-card {
+    background: #252932;
+    color: inherit;
+    border: 1px solid #3a404b;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .hero-card:hover {
+    border-color: #f99e1a;
+    transform: translateY(-3px);
+  }
+  
+  .hero-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  #alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 20px 0;
+  }
+  
+  #alphabet button {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  #alphabet button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  #heroModal {
+    width: min(650px, 85vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #252932;
+    color: #f5f5f5;
+    border: 1px solid #454b57;
+    border-radius: 16px;
+  }
+  
+  #heroModal::backdrop {
+    background: rgb(0 0 0 / 75%);
+  }
+  
+  .modal-portrait {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    border-radius: 12px;
+  } */

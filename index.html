@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Overwatch API</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+
+    <input
+  id="search"
+  type="search"
+  placeholder="Search heroes..."
+/>
+
+<select id="roleFilter">
+  <option value="all">All roles</option>
+  <option value="tank">Tank</option>
+  <option value="damage">Damage</option>
+  <option value="support">Support</option>
+</select>
+
+<nav id="alphabet"></nav>
+
+<p id="heroCount"></p>
+<section id="heroGallery"></section>
+
+<dialog id="heroModal">
+  <button id="closeModal" type="button">Close</button>
+  <div id="modalContent"></div>
+</dialog>
+
+
     <footer>
         Created by <a href="">Emily Revell</a> in the context of Systems Design in the Interaction Design
         program at Sheridan College 2026 Fall Semester. Overwatch Hero data via <a href="https://overfast-api.tekrop.fr">
