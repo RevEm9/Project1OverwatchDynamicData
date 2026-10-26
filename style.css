@@ -22,7 +22,7 @@ body {
     font-family:changeling-neo, sans-serif;
     font-weight: 700;
     font-size: 50px;
-    filter: drop-shadow(3px 1px 0px #f3f2f2);
+    filter: drop-shadow(3px -1px 0px #f3f2f2);
   }
   
   h2{
@@ -52,6 +52,12 @@ body {
 
   div{
     font-size: 14px;
+}
+
+.logo img {
+width: 100px;
+height: 100px;
+filter: drop-shadow(5px 5px 7px #231513);
 }
 
   #search {
@@ -84,7 +90,8 @@ body {
     font-size: 16px;
     outline: none;
     margin-left: 25px;
-    filter: drop-shadow(5px 5px 7px #B84030);
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 7px #9d4623);
 }
   #alphabet {
     margin-bottom: 30px;
@@ -113,7 +120,7 @@ body {
     cursor: pointer;
     text-align: left;
     border: none;
-    filter: drop-shadow(5px 5px 5px #B84030);
+    filter: drop-shadow(5px 5px 7px #B84030);
     
   }
   
@@ -209,7 +216,7 @@ box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
 
 /* Add hover effect for the close button */
 #closeModal:hover {
-    color: #ff4f4f; /* Change color on hover */
+    color: #fff04f; /* Change color on hover */
 }
 
 #heroCount {
