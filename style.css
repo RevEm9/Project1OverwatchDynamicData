@@ -15,36 +15,81 @@ body {
     margin-top: 25px;
     font-weight: 400;
     font-style: normal;
+    font-family: articulat-cf, sans-serif;
   }
 
   h1{
     font-family:changeling-neo, sans-serif;
     font-weight: 700;
-    font-size: xx-large;
+    font-size: 50px;
+    filter: drop-shadow(3px 1px 0px #f3f2f2);
   }
   
+  h2{
+    font-family:vox, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  h3{
+    font-family:vox, sans-serif;
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  p{
+    font-family: franklin-gothic, sans-serif;
+    font-size: 14px;
+  }
+
+  #text {
+    font-family: franklin-gothic, sans-serif;
+    font-size: 14px;
+  }
+
+  div{
+    font-size: 14px;
+}
 
   #search {
     width: 80%;
     max-width: 400px;
     padding: 15px;
-    border-radius: 25px;
-    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: "aptos-display", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     outline: none;
+    background: #f2f4f8;
+    filter: drop-shadow(5px 5px 7px #B84030);
   } 
 
+
+#roleFilter {
+    max-width: 400px;
+    border: none;
+    padding: 15px; /* Match the padding of #search */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: "aptos-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    outline: none;
+    margin-left: 25px;
+    filter: drop-shadow(5px 5px 7px #B84030);
+}
   #alphabet {
     margin-bottom: 30px;
     padding: 10px;
-    font-family: "hoss-round", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,17 +107,18 @@ body {
   
   .hero-card {
     background: #f2f4f8;
-    color: inherit;
+    /* color: inherit; */
     border-radius: 8px;
     padding: 12px;
     cursor: pointer;
     text-align: left;
+    border: none;
     filter: drop-shadow(5px 5px 5px #B84030);
     
   }
   
   .hero-card:hover {
-    border-color: #f99e1a;
+    border-color: #fff04f; 
     transform: translateY(-3px);
     -webkit-box-shadow:0px 0px 39px 12px rgba(255,240,79,0.9);
 -moz-box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
@@ -84,7 +130,9 @@ box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 8px;
-    border: solid 1px #f99e1a;
+    padding: auto;
+    /* border: solid 1px #f99e1a; */
+    filter: drop-shadow(7px 0px 3px #a4a3a3);
   }
   
 
@@ -92,98 +140,29 @@ box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
   #alphabet {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 12px;
     margin: 20px 0;
   }
   
   #alphabet button {
     padding: 8px 10px;
-    cursor: pointer;
-  }
-  
-  #alphabet button:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-  
-  #heroModal {
-    width: min(650px, 85vw);
-    max-height: 80vh;
-    overflow-y: auto;
-    background: #252932;
-    color: #f5f5f5;
-    border: 1px solid #454b57;
-    border-radius: 16px;
-  }
-  
-  #heroModal::backdrop {
-    background: rgb(0 0 0 / 75%);
-  }
-  
-  .modal-portrait {
-    display: block;
-    width: 180px;
-    max-width: 100%;
-    border-radius: 12px;
-  } */
-  
-
-
-
-/* Below: This CSS is from chatGPT as I just wanted to see how it looked slightly done up. */
-/* body {
-    margin: 0;
-    padding: 24px;
-    background: #15171c;
-    color: #f5f5f5;
-    font-family: Arial, sans-serif;
-  }
-  
-  #heroGallery {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(160px, 1fr)
-    );
-    gap: 16px;
-  }
-  
-  .hero-card {
-    background: #252932;
-    color: inherit;
-    border: 1px solid #3a404b;
-    border-radius: 12px;
-    padding: 12px;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .hero-card:hover {
-    border-color: #f99e1a;
-    transform: translateY(-3px);
-  }
-  
-  .hero-card img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
     border-radius: 8px;
-  }
-  
-  #alphabet {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin: 20px 0;
-  }
-  
-  #alphabet button {
-    padding: 8px 10px;
     cursor: pointer;
+    border:none;
+    font-family:vox, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #f2f4f8;;
   }
-  
+
+  #alphabet button:hover {
+    background-color: #B84030;
+    color: #fff;
+  }
+
   #alphabet button:disabled {
-    opacity: 0.3;
+    opacity: 0.5;
     cursor: not-allowed;
   }
   
@@ -192,18 +171,49 @@ box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
     max-height: 80vh;
     overflow-y: auto;
     background: #252932;
-    color: #f5f5f5;
+    color: #f2f4f8;
     border: 1px solid #454b57;
     border-radius: 16px;
+    text-align: left;
+    padding: 25px;
   }
-  
+
   #heroModal::backdrop {
     background: rgb(0 0 0 / 75%);
   }
   
   .modal-portrait {
+    float: left;
     display: block;
+    margin-right: 15px;
+    margin-bottom: 12px;
     width: 180px;
-    max-width: 100%;
+    max-width: 40%;
     border-radius: 12px;
-  } */
+  } 
+
+  /* Style the close button */
+#closeModal {
+    position: absolute; /* Position it relative to the modal */
+    top: 10px; /* Distance from the top of the modal */
+    right: 10px; /* Distance from the right of the modal */
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    font-size: 24px; /* Make the "X" larger */
+    font-weight: bold; /* Make the "X" bold */
+    color: #f5f5f5; /* Match the modal's text color */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+/* Add hover effect for the close button */
+#closeModal:hover {
+    color: #ff4f4f; /* Change color on hover */
+}
+
+#heroCount {
+    font-weight:600;
+    color: #622705;
+    margin-bottom: 40px;
+}
