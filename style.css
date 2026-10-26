@@ -1,8 +1,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #CDF0FF;
-    color: #333;
+    /* background: #f19131;
+    color: #333; */
+    background: #b84030;
+    background: linear-gradient(90deg,rgba(184, 64, 48, 1) 0%, rgba(194, 117, 45, 1) 25%, rgba(241, 145, 49, 1) 50%, rgba(194, 117, 45, 1) 87%, rgba(184, 64, 48, 1) 100%);
     text-align: center;
     padding: 20px;
   }
@@ -14,6 +16,116 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+  h1{
+    font-family:changeling-neo, sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+  }
+  
+
+  #search {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: "aptos-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    outline: none;
+  } 
+
+  #alphabet {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  #heroGallery {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(160px, 1fr)
+    );
+    gap: 25px;
+  }
+  
+  .hero-card {
+    background: #f2f4f8;
+    color: inherit;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    text-align: left;
+    filter: drop-shadow(5px 5px 5px #B84030);
+    
+  }
+  
+  .hero-card:hover {
+    border-color: #f99e1a;
+    transform: translateY(-3px);
+    -webkit-box-shadow:0px 0px 39px 12px rgba(255,240,79,0.9);
+-moz-box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
+box-shadow: 0px 0px 39px 12px rgba(255,240,79,0.9);
+  }
+  
+  .hero-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 1px #f99e1a;
+  }
+  
+
+    
+  #alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 20px 0;
+  }
+  
+  #alphabet button {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  #alphabet button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  #heroModal {
+    width: min(650px, 85vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #252932;
+    color: #f5f5f5;
+    border: 1px solid #454b57;
+    border-radius: 16px;
+  }
+  
+  #heroModal::backdrop {
+    background: rgb(0 0 0 / 75%);
+  }
+  
+  .modal-portrait {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    border-radius: 12px;
+  } */
   
 
 
